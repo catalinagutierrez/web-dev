@@ -108,3 +108,10 @@ h1 {
   background-color: rgb(36, 36, 36) !important;
   border-radius: 20px;
 }
+
+.wd-block {
+  display: inline-block;
+}
+.wd-block:empty:before {
+  content: "\00a0";
+}
