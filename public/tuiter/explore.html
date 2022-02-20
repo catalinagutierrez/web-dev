@@ -8,63 +8,65 @@
         <div class="container">
             <div class="row p-2">
                 <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 d-none d-sm-block">
-                    <ul class="nav nav-pills flex-column">
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fab fa-twitter fa-lg"></i>
-                                <span class="wd-block"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-house"></i>
-                                <span class="d-none d-xl-inline-block"> Home</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link active" href="#">
-                                <i class="fa-solid fa-hashtag"></i> 
-                                <span class="d-none d-xl-inline-block"> Explore</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-bell"></i> 
-                                <span class="d-none d-xl-inline-block"> Notifications</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-envelope"></i> 
-                                <span class="d-none d-xl-inline-block"> Messages</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-bookmark"></i> 
-                                <span class="d-none d-xl-inline-block"> Bookmarks</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-list"></i> 
-                                <span class="d-none d-xl-inline-block"> Lists</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-user"></i> 
-                                <span class="d-none d-xl-inline-block"> Profile</span>
-                            </a>
-                        </li>
-                        <li class="nav-item menu-pill">
-                            <a class="nav-link" href="#">
-                                <i class="fa-solid fa-ellipsis"></i>
-                                <span class="d-none d-xl-inline-block"> More</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <button type="button" class="btn btn-block btn-primary wd-tweet-btn">Tuit</button>
+                    <div>
+                        <ul class="nav mt-2 flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fab fa-twitter fa-lg"></i>
+                                    <span class="wd-block"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span class="d-none d-xl-inline-block"> Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-hashtag"></i> 
+                                    <span class="d-none d-xl-inline-block"> Explore</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-bell"></i> 
+                                    <span class="d-none d-xl-inline-block"> Notifications</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-envelope"></i> 
+                                    <span class="d-none d-xl-inline-block"> Messages</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-bookmark"></i> 
+                                    <span class="d-none d-xl-inline-block"> Bookmarks</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-list"></i> 
+                                    <span class="d-none d-xl-inline-block"> Lists</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-user"></i> 
+                                    <span class="d-none d-xl-inline-block"> Profile</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                    <span class="d-none d-xl-inline-block"> More</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-block wd-tweet-btn wd-tuit-btn">Tuit</button>
                 </div>
                 <div class="col-sm-10 col-md-10 col-lg-7 col-xl-7">
                     <div class="wd-main-border">
@@ -72,8 +74,8 @@
                             <div class="col-sm-10 p-3 ps-4">
                                 <div class="wd-search-bar-border">
                                     <div class="input-group rounded">
-                                        <span class="input-group-text border-0 bg-transparent" id="search-addon">
-                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        <span class="input-group-text border-0" id="search-addon">
+                                            <i class="fa-solid fa-magnifying-glass bg-transparent"></i>
                                         </span>
                                         <input type="search" id="search" class="form-control border-0" placeholder="Search Tuiter"/>
                                     </div>
@@ -176,45 +178,47 @@
                     </div>
                 </div> 
                 <div class="col-lg-4 col-xl-3 d-none d-lg-block">
-                    <div class="row p-3 wd-main-border">
-                        <h5 class="wd-main-text">Who to follow</h5>
-                    </div>
-                    <div class="row p-2 ps-4 wd-main-border">
-                        <div class="col-sm-2 p-0">
-                            <img src="java.png" class="wd-icon">
+                    <div id="who-to-follow">
+                        <div class="row p-3 bg-transparent">
+                            <h5 class="wd-main-text bg-transparent">Who to follow</h5>
                         </div>
-                        <div class="col-sm-6">
-                            <p class="wd-main-text">
-                                <span>
-                                    Java 
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </span>
-                                
-                            </p>
-                            <p class="wd-secondary-text">@Java</p>
+                        <div class="row p-2 ps-4 pe-4 bg-transparent">
+                            <div class="col-sm-2 p-0 bg-transparent">
+                                <img src="java.png" class="wd-icon bg-transparent">
+                            </div>
+                            <div class="col-sm-6 bg-transparent">
+                                <p class="wd-main-text bg-transparent">
+                                    <span class="bg-transparent">
+                                        Java 
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                    
+                                </p>
+                                <p class="wd-secondary-text bg-transparent">@Java</p>
+                            </div>
+                            <div class="col-sm-4 bg-transparent">
+                                <button type="button" class="btn btn-primary wd-tweet-btn">Follow</button>
+                            </div>  
                         </div>
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-primary wd-tweet-btn">Follow</button>
-                        </div>  
-                    </div>
-
-                    <div class="row p-2 ps-4 wd-main-border">
-                        <div class="col-sm-2 p-0">
-                            <img src="rs.png" class="wd-icon">
+    
+                        <div class="row p-2 ps-4 pe-4 bg-transparent">
+                            <div class="col-sm-2 p-0 bg-transparent">
+                                <img src="rs.png" class="wd-icon bg-transparent">
+                            </div>
+                            <div class="col-sm-6 bg-transparent">
+                                <p class="wd-main-text bg-transparent">
+                                    <span class="bg-transparent">
+                                        Relativity Space 
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </span>
+                                    
+                                </p>
+                                <p class="wd-secondary-text bg-transparent">@relativityspace</p>
+                            </div>
+                            <div class="col-sm-4 bg-transparent">
+                                <button type="button" class="btn wd-tweet-btn">Follow</button>
+                            </div>  
                         </div>
-                        <div class="col-sm-6">
-                            <p class="wd-main-text">
-                                <span>
-                                    Relativity Space 
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </span>
-                                
-                            </p>
-                            <p class="wd-secondary-text">@relativityspace</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <button type="button" class="btn btn-primary wd-tweet-btn">Follow</button>
-                        </div>  
                     </div>
                 </div>
             </div>
