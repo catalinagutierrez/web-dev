@@ -115,3 +115,22 @@ h1 {
 .wd-block:empty:before {
   content: "\00a0";
 }
+
+.wd-main-img {
+  width: 100%;
+}
+
+.wd-main-img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.wd-main-img-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: transparent !important;
+}
