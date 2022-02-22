@@ -55,7 +55,7 @@ html body {
 }
 
 .wd-icon {
-  margin: auto;
+  padding-top: 10px;
   height: 21px;
   display: block;
 }
