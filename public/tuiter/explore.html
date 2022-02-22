@@ -6,91 +6,73 @@
     </head>
     <body>
         <div class="container">
-            <div class="row p-2">
-                <div class="col-sm-2 col-md-2 col-lg-1 col-xl-2 d-none d-sm-block">
-                    <div>
-                        <ul class="nav mt-2 flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fab fa-twitter fa-lg"></i>
-                                    <span class="wd-block"></span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">
-                                    <i class="fa-solid fa-house"></i>
-                                    <span class="d-none d-xl-inline-block"> Home</span>
-                                </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-hashtag"></i> 
-                                    <span class="d-none d-xl-inline-block"> Explore</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-bell"></i> 
-                                    <span class="d-none d-xl-inline-block"> Notifications</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-envelope"></i> 
-                                    <span class="d-none d-xl-inline-block"> Messages</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-bookmark"></i> 
-                                    <span class="d-none d-xl-inline-block"> Bookmarks</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-list"></i> 
-                                    <span class="d-none d-xl-inline-block"> Lists</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-user"></i> 
-                                    <span class="d-none d-xl-inline-block"> Profile</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <i class="fa-solid fa-ellipsis"></i>
-                                    <span class="d-none d-xl-inline-block"> More</span>
-                                </a>
-                            </li>
-                        </ul>
+            <div class="row mt-2">
+
+                <div class="d-none d-md-block col-md-2 col-lg-1 col-xl-2">
+                    <div class="list-group">
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fab fa-twitter fa-lg wd-icon"></i>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="d-none d-xl-inline-block"> Home</span>
+                        </a>   
+                        <a class="list-group-item bg-dark text-white active" href="/">
+                            <i class="fa-solid fa-hashtag"></i> 
+                            <span class="d-none d-xl-inline-block"> Explore</span>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-bell"></i> 
+                            <span class="d-none d-xl-inline-block"> Notifications</span>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-envelope"></i> 
+                            <span class="d-none d-xl-inline-block"> Messages</span>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-bookmark"></i> 
+                            <span class="d-none d-xl-inline-block"> Bookmarks</span>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-list"></i> 
+                            <span class="d-none d-xl-inline-block"> Lists</span>
+                        </a>
+                        <a class="list-group-item bg-dark text-white" href="/">
+                            <i class="fa-solid fa-user"></i> 
+                            <span class="d-none d-xl-inline-block"> Profile</span>
+                        </a>
+                        <a class="list-group-item rounded-bottom-20 bg-dark text-white" href="/">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <span class="d-none d-xl-inline-block"> More</span> 
+                        </a>
                     </div>
-                    <button type="button" class="btn btn-block wd-tweet-btn wd-tuit-btn">Tuit</button>
+                    <div class="d-grid mt-2">
+                        <a href="tweet.html"
+                           class="btn btn-primary btn-block rounded-pill">
+                            Tweet</a>
+                    </div>
                 </div>
-                <div class="col-sm-10 col-md-10 col-lg-7 col-xl-7">
-                    <div class="wd-main-border">
+
+
+                <div class="col-sm-12 col-md-10 col-lg-6">
+                    <div class="border border-dark">
                         <div class="row">
-                            <div class="col-sm-10 p-3 ps-4">
-                                <div class="wd-search-bar-border">
-                                    <div class="input-group rounded">
-                                        <span class="input-group-text border-0" id="search-addon">
-                                            <i class="fa-solid fa-magnifying-glass bg-transparent"></i>
-                                        </span>
-                                        <input type="search" id="search" class="form-control border-0" placeholder="Search Tuiter"/>
+                            <div class="col-11 p-3 ps-4">
+                                <div class="input-group bg-dark rounded-pill">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text bg-transparent border-0"><i class="fa fa-search text-secondary"></i></div>
                                     </div>
+                                    <input class="form-control border-0 rounded bg-transparent" type="search" placeholder="Search">
                                 </div>
                             </div>
-                            <div class="col-sm-2 p-4">
-                                <a href="explore-settings.html">
-                                    <span class="text-primary p-2">
-                                        <i class="fa-solid fa-gear fa-lg"></i>
-                                    </span>
+                            <div class="col-1 p-0 m-0 d-flex">
+                                <a href="explore-settings.html" class="align-self-center">
+                                        <i class="fa-solid fa-gear fa-lg text-primary"></i>
                                 </a>
                             </div>  
                         </div>
       
-                        <ul class="nav nav-tabs">
+                        <ul class="nav nav-tabs border-0">
                             <li class="nav-item">
                               <a class="nav-link active" href="for-you.html">For you</a>
                             </li>
@@ -110,176 +92,194 @@
                     </div>
     
                     
-                    <div class="row wd-main-border p-0 m-0">
+                    <div class="row border border-dark p-0 m-0">
                         <div class="col-12 p-0">
                             <div class="wd-main-img-container">
-                                <img class="wd-main-img" src="media/starship.jpg"/>  
+                                <img class="wd-main-img mw-100" src="images/starship.jpg"/>  
                                 <div class="wd-main-img-text">Space X's Starship</div> 
                             </div> 
                         </div>  
                     </div>
 
-                    <div class="row wd-main-border p-2 m-0 d-flex justify-content-between">
-                        <div class="col-6">
+                    <div class="row p-2 m-0 d-flex justify-content-between border border-dark">
+                        <div class="col-9">
                             <p class="wd-secondary-text">Web Development</p>
-                            <p class="wd-secondary-text">
-                                <span class="wd-main-text">ReactJS <i class="fa-solid fa-circle-check"></i></span>
-                                <span> - 2h</span>
-                            </p>
+                            <span class="wd-main-text">
+                                ReactJS 
+                                <i class="fa-solid fa-circle-check"></i></span>
+                            <span class="wd-secondary-text"> - 2h</span>
                             <p class="wd-main-text">
                                 React.js is a component based front end library that 
                                 makes it very easy to build Single Page Applications or SPAs.
                             </p>
                         </div>
-                        <div class="col-6">
-                            <img class="float-end wd-post-img" src="media/react.png"/>    
-                        </div>  
+                        <div class="col-3">
+                            <img class="float-end img-fluid rounded-2 wd-dim-100" src="images/react.png"/>
+                        </div>
                     </div>
 
-                    <div class="row wd-main-border p-2 m-0 d-flex justify-content-between">
-                        <div class="col-6">
-                            <p class="wd-secondary-text">
-                                <span class="wd-main-text">JavaScript <i class="fa-solid fa-circle-check"></i></span>
-                                <span> - 2h</span>
-                            </p>
+                    <div class="row p-2 m-0 d-flex justify-content-between border border-dark">
+                        <div class="col-9">
+                            <span class="wd-main-text">
+                                JavaScript 
+                                <i class="fa-solid fa-circle-check"></i></span>
+                            <span class="wd-secondary-text"> - 2h</span>
                             <p class="wd-main-text">
                                 JavaScript is a programming language that can run on browsers as well 
                                 as desktops.
                             </p>
                             <p class="wd-secondary-text">123K Tweets</p>
                         </div>
-                        <div class="col-6">
-                            <img class="float-end wd-post-img" src="media/javascript.png"/>    
-                        </div>  
+                        <div class="col-3">
+                            <img class="float-end img-fluid rounded-2 wd-dim-100" src="images/javascript.png"/>
+                        </div>
                     </div>
 
-                    <div class="row wd-main-border p-2 m-0 d-flex justify-content-between">
-                        <div class="col-6">
+                    <div class="row p-2 m-0 d-flex justify-content-between border border-dark">
+                        <div class="col-9">
                             <p class="wd-secondary-text">Web Development</p>
-                            <p class="wd-main-text">JQuery</p>
+                            <span class="wd-main-text">
+                                JQuery 
+                                <i class="fa-solid fa-circle-check"></i></span>
+                            <span class="wd-secondary-text"> - 2h</span>
                             <p class="wd-secondary-text">123K Tweets</p>
                         </div>
-                        <div class="col-6">
-                            <img class="float-end wd-post-img" src="media/jquery.png"/>    
-                        </div>  
+                        <div class="col-3">
+                            <img class="float-end img-fluid rounded-2 wd-dim-100" src="images/jquery.png"/>
+                        </div>
                     </div>
 
-                    <div class="row wd-main-border p-2 m-0 d-flex justify-content-between">
-                        <div class="col-6">
+                    <div class="row p-2 m-0 d-flex justify-content-between border border-dark">
+                        <div class="col-9">
                             <p class="wd-secondary-text">Web Development</p>
-                            <p class="wd-secondary-text">
-                                <span class="wd-main-text">NodeJS <i class="fa-solid fa-circle-check"></i></span>
-                                <span> - 2h</span>
-                            </p>
+                            <span class="wd-main-text">
+                                NodeJS 
+                                <i class="fa-solid fa-circle-check"></i></span>
+                            <span class="wd-secondary-text"> - 2h</span>
                             <p class="wd-secondary-text">123K Tweets</p>
                         </div>
-                        <div class="col-6">
-                            <img class="float-end wd-post-img" src="media/node.png"/>   
-                        </div>  
+                        <div class="col-3">
+                            <img class="float-end img-fluid rounded-2 wd-dim-100" src="images/node.png"/>
+                        </div>
                     </div>
                 </div> 
 
 
-                <div class="col-lg-4 col-xl-3 d-none d-lg-block">
-                    <div id="who-to-follow">
-                        <div class="row p-3 bg-transparent">
-                            <h5 class="wd-main-text bg-transparent">Who to follow</h5>
-                        </div>
-                        <div class="row p-2 bg-transparent">
-                            <div class="col-sm-2 p-0 bg-transparent">
-                                <img src="media/java.png" class="wd-icon bg-transparent">
+                <div class="d-none d-lg-block col-lg-4 col-xl-4">
+                    <div class="row p-3 m-0 bg-dark">
+                        <p class="wd-main-text">Who to follow</>
+                    </div>
+                    <ul class="list-group bg-dark">
+                        <div class="row bg-transparent m-0">
+                            <div class="col-sm-2 p-2 bg-transparent">
+                                <img src="images/java.png" class="img-fluid rounded-circle border-0 bg-transparent">
                             </div>
-                            <div class="col-sm-6 bg-transparent text-nowrap">
+                            <div class="col-sm-6 pt-2 bg-transparent text-nowrap">
                                 <p class="wd-main-text bg-transparent">
                                     <span class="bg-transparent">
-                                        Java 
+                                        Java
                                         <i class="fa-solid fa-circle-check"></i>
                                     </span>
                                     
                                 </p>
                                 <p class="wd-secondary-text bg-transparent">@Java</p>
                             </div>
-                            <div class="col-sm-4 bg-transparent">
-                                <button type="button" class="btn btn-primary wd-tweet-btn">Follow</button>
+                            <div class="col-sm-4 bg-transparent d-flex">
+                                <a href="#"
+                                    class="btn btn-light btn-block rounded-pill align-self-center">
+                                    Follow
+                                </a>
                             </div>  
                         </div>
-    
-                        <div class="row p-2 bg-transparent">
-                            <div class="col-sm-2 p-0 bg-transparent">
-                                <img src="media/rs.png" class="wd-icon bg-transparent">
+
+                        <div class="row bg-transparent m-0">
+                            <div class="col-sm-2 p-2 bg-transparent">
+                                <img src="images/rs.png" class="img-fluid rounded-circle border-0 bg-transparent">
                             </div>
-                            <div class="col-sm-6 bg-transparent text-nowrap">
+                            <div class="col-sm-6 pt-2 bg-transparent text-nowrap">
                                 <p class="wd-main-text bg-transparent">
                                     <span class="bg-transparent">
-                                        Relativity Space 
+                                        Relativity Space
                                         <i class="fa-solid fa-circle-check"></i>
                                     </span>
                                     
                                 </p>
                                 <p class="wd-secondary-text bg-transparent">@relativityspace</p>
                             </div>
-                            <div class="col-sm-4 bg-transparent">
-                                <button type="button" class="btn wd-tweet-btn">Follow</button>
+                            <div class="col-sm-4 bg-transparent d-flex">
+                                <a href="#"
+                                    class="btn btn-light btn-block rounded-pill align-self-center">
+                                    Follow
+                                </a>
                             </div>  
                         </div>
 
-                        <div class="row p-2 bg-transparent text-nowrap">
-                            <div class="col-sm-2 p-0 bg-transparent">
-                                <img src="media/virgin.png" class="wd-icon bg-transparent">
+                        <div class="row bg-transparent m-0">
+                            <div class="col-sm-2 p-2 bg-transparent">
+                                <img src="images/virgin.png" class="img-fluid rounded-circle border-0 bg-transparent">
                             </div>
-                            <div class="col-sm-6 bg-transparent">
+                            <div class="col-sm-6 pt-2 bg-transparent text-nowrap">
                                 <p class="wd-main-text bg-transparent">
                                     <span class="bg-transparent">
-                                        Virgin Galactic 
+                                        Virgin Galactic
                                         <i class="fa-solid fa-circle-check"></i>
                                     </span>
                                     
                                 </p>
                                 <p class="wd-secondary-text bg-transparent">@virgingalactic</p>
                             </div>
-                            <div class="col-sm-4 bg-transparent">
-                                <button type="button" class="btn wd-tweet-btn">Follow</button>
+                            <div class="col-sm-4 bg-transparent d-flex">
+                                <a href="#"
+                                    class="btn btn-light btn-block rounded-pill align-self-center">
+                                    Follow
+                                </a>
                             </div>  
                         </div>
 
-                        <div class="row p-2 bg-transparent text-nowrap">
-                            <div class="col-sm-2 p-0 bg-transparent">
-                                <img src="media/nasa.jpg" class="wd-icon bg-transparent">
+                        <div class="row bg-transparent m-0">
+                            <div class="col-sm-2 p-2 bg-transparent">
+                                <img src="images/nasa.jpg" class="img-fluid rounded-circle border-0 bg-transparent">
                             </div>
-                            <div class="col-sm-6 bg-transparent">
+                            <div class="col-sm-6 pt-2 bg-transparent text-nowrap">
                                 <p class="wd-main-text bg-transparent">
                                     <span class="bg-transparent">
-                                        NASA 
+                                        NASA
                                         <i class="fa-solid fa-circle-check"></i>
                                     </span>
                                     
                                 </p>
                                 <p class="wd-secondary-text bg-transparent">@NASA</p>
                             </div>
-                            <div class="col-sm-4 bg-transparent">
-                                <button type="button" class="btn wd-tweet-btn">Follow</button>
+                            <div class="col-sm-4 bg-transparent d-flex">
+                                <a href="#"
+                                    class="btn btn-light btn-block rounded-pill align-self-center">
+                                    Follow
+                                </a>
                             </div>  
                         </div>
 
-                        <div class="row p-2 bg-transparent text-nowrap">
-                            <div class="col-sm-2 p-0 bg-transparent">
-                                <img src="media/tesla.png" class="wd-icon bg-transparent">
+                        <div class="row bg-transparent m-0">
+                            <div class="col-sm-2 p-2 bg-transparent">
+                                <img src="images/tesla.png" class="img-fluid rounded-circle border-0 bg-transparent">
                             </div>
-                            <div class="col-sm-6 bg-transparent">
+                            <div class="col-sm-6 pt-2 bg-transparent text-nowrap">
                                 <p class="wd-main-text bg-transparent">
                                     <span class="bg-transparent">
-                                        Tesla 
+                                        Tesla
                                         <i class="fa-solid fa-circle-check"></i>
                                     </span>
                                     
                                 </p>
                                 <p class="wd-secondary-text bg-transparent">@Tesla</p>
                             </div>
-                            <div class="col-sm-4 bg-transparent">
-                                <button type="button" class="btn wd-tweet-btn">Follow</button>
+                            <div class="col-sm-4 bg-transparent d-flex">
+                                <a href="#"
+                                    class="btn btn-light btn-block rounded-pill align-self-center">
+                                    Follow
+                                </a>
                             </div>  
                         </div>
-                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
