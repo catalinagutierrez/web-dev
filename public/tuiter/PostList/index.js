@@ -1,16 +1,16 @@
-import PostSummaryItem from "./PostSummaryItem.js";
+import PostItem from "./PostItem.js";
 import posts from "./posts.js";
 
-const PostSummary = () => {
+const Post = () => {
   return `
         <ul class="list-group">
             ${posts
               .map((post) => {
-                return PostSummaryItem(post);
+                return PostItem(post);
               })
               .join("")}
         </ul>
     `;
 };
 
-export default PostSummary;
+export default Post;

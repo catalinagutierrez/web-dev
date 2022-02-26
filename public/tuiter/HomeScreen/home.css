@@ -16,21 +16,6 @@ html body {
   color: rgb(110, 118, 125);
 }
 
-.wd-main-img-container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.wd-main-img-text {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-size: 36px;
-  font-weight: bold;
-  background-color: transparent;
-}
-
 .nav.nav-tabs .nav-item .nav-link.active {
   background-color: rgb(69, 161, 204);
 }
@@ -42,7 +27,18 @@ html body {
   color: white;
 }
 
+.wd-text-truncate {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rounded-4 {
+  border-radius: 20px !important;
+}
+
 .wd-post-img {
-  height: 100px;
-  width: 100px;
+  height: 65px;
+  width: 65px;
 }
