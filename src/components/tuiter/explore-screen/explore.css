@@ -1,0 +1,22 @@
+.wd-main-img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.wd-main-img-text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+#search {
+  background-color: rgb(48, 48, 48);
+}
+
+#search-addon {
+  background-color: rgb(48, 48, 48);
+}

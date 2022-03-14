@@ -1,0 +1,55 @@
+[
+  {
+    "icon": "fab fa-twitter fa-lg",
+    "text": "",
+    "href": "",
+    "name": ""
+  },
+  {
+    "icon": "fa-solid fa-house",
+    "text": "Home",
+    "href": "../HomeScreen/home.html",
+    "name": "home"
+  },
+  {
+    "icon": "fa-solid fa-hashtag",
+    "text": "Explore",
+    "href": "../ExploreScreen/explore.html",
+    "name": "explore"
+  },
+  {
+    "icon": "fa-solid fa-bell",
+    "text": "Notifications",
+    "href": "/"
+  },
+  {
+    "icon": "fa-solid fa-envelope",
+    "text": "Messages",
+    "href": "/",
+    "name": "messages"
+  },
+  {
+    "icon": "fa-solid fa-bookmark",
+    "text": "Bookmarks",
+    "href": "/",
+    "name": "bookmarks"
+  },
+  {
+    "icon": "fa-solid fa-list",
+    "text": "Lists",
+    "href": "/",
+    "name": "lists"
+  },
+  {
+    "icon": "fa-solid fa-user",
+    "text": "Profile",
+    "href": "/",
+    "name": "profile"
+  },
+  {
+    "icon": "fa-solid fa-ellipsis",
+    "text": "More",
+    "href": "/",
+    "name": "more"
+  }
+]

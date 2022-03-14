@@ -1,0 +1,15 @@
+.wd-text-truncate {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.rounded-4 {
+  border-radius: 20px !important;
+}
+
+.wd-post-img {
+  height: 65px;
+  width: 65px;
+}
