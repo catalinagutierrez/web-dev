@@ -28,7 +28,7 @@ const WhoToFollowListItem = ({
         </div>
         <div className="col-sm-4 bg-transparent d-flex">
           <a
-            href="#"
+            href="/"
             className="btn btn-block rounded-pill align-self-center wd-blue"
           >
             Follow

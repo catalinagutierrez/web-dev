@@ -60,6 +60,7 @@ const ExploreComponent = () => (
           <img
             className="mw-100"
             src={require("../../../assets/starship.jpg")}
+            alt="img"
           />
           <div className="wd-main-img-text">Space X's Starship</div>
         </div>

@@ -25,6 +25,7 @@ const PostSummaryItem = ({
       <img
         className="float-end rounded-2 wd-post-img"
         src={require(`../../../assets/${post.image}`)}
+        alt="img"
       />
     </div>
   </div>

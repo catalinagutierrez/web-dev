@@ -38,6 +38,7 @@ const PostItem = ({
         <img
           src={require(`../../../assets/${post.image}`)}
           className="img-fluid w-100"
+          alt="img"
         />
         {post.contentTitle && post.contentBody && (
           <div className="p-3">
