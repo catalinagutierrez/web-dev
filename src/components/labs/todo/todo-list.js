@@ -4,12 +4,15 @@ import todos from "./todos.json";
 
 const TodoList = () => {
   return (
-    <ul>
-      {todos.map((todo, i = 0) => {
-        i++;
-        return <TodoItem todo={todo} />;
-      })}
-    </ul>
+    <div>
+      <h2>Todo List</h2>
+      <ul>
+        {todos.map((todo, i = 0) => {
+          i++;
+          return <TodoItem todo={todo} />;
+        })}
+      </ul>
+    </div>
   );
 };
 
