@@ -16,7 +16,7 @@ const NavigationItem = ({
   return (
     <div>
       {page.href === location.pathname ? (
-        <Link to={`/tuiter/${page.href}`}>
+        <Link to={`${page.href}`}>
           <div className="list-group-item text-white wd-blue">
             <i className={page.icon}></i>
             <span className="d-none d-xl-inline-block p-1 ps-2">
