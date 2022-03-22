@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
+
 import WhoToFollowListItem from "./WhoToFollowListItem";
 
-import who from "./who.json";
-
 const WhoToFollowList = () => {
+  const who = useSelector((state) => state.who);
+
   return (
     <div>
       <div className="row p-3 m-0 bg-dark">

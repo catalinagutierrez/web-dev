@@ -8,48 +8,49 @@
   {
     "icon": "fa-solid fa-house",
     "text": "Home",
-    "href": "../HomeScreen/home.html",
+    "href": "/tuiter/",
     "name": "home"
   },
   {
-    "icon": "fa-solid fa-hashtag",
+    "icon": "fa fa-hashtag",
     "text": "Explore",
-    "href": "../ExploreScreen/explore.html",
+    "href": "/tuiter/explore",
     "name": "explore"
   },
   {
     "icon": "fa-solid fa-bell",
     "text": "Notifications",
-    "href": "/"
+    "href": "/tuiter/notifications",
+    "name": "notifications"
   },
   {
     "icon": "fa-solid fa-envelope",
     "text": "Messages",
-    "href": "/",
+    "href": "/tuiter/messages",
     "name": "messages"
   },
   {
     "icon": "fa-solid fa-bookmark",
     "text": "Bookmarks",
-    "href": "/",
+    "href": "/tuiter/bookmarks",
     "name": "bookmarks"
   },
   {
     "icon": "fa-solid fa-list",
     "text": "Lists",
-    "href": "/",
+    "href": "/tuiter/lists",
     "name": "lists"
   },
   {
     "icon": "fa-solid fa-user",
     "text": "Profile",
-    "href": "/",
+    "href": "/tuiter/profile",
     "name": "profile"
   },
   {
     "icon": "fa-solid fa-ellipsis",
     "text": "More",
-    "href": "/",
+    "href": "/tuiter/more",
     "name": "more"
   }
 ]

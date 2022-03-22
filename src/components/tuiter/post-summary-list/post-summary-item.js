@@ -6,7 +6,7 @@ const PostSummaryItem = ({
     userName: "",
     title: "jQuery",
     time: "last week",
-    image: "../../../images/jquery.png",
+    image: "jquery.png",
     tweets: "122K",
   },
 }) => (

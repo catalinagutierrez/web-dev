@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "font-awesome/css/font-awesome.min.css";
 
@@ -10,12 +10,13 @@ const NavigationItem = ({
     href: "",
     name: "",
   },
-  active,
 }) => {
+  const location = useLocation();
+
   return (
     <div>
-      {page.name === active ? (
-        <Link to={`/tuiter/${page.name}`}>
+      {page.href === location.pathname ? (
+        <Link to={`/tuiter/${page.href}`}>
           <div className="list-group-item text-white wd-blue">
             <i className={page.icon}></i>
             <span className="d-none d-xl-inline-block p-1 ps-2">
@@ -25,7 +26,7 @@ const NavigationItem = ({
           </div>
         </Link>
       ) : (
-        <Link to={`/tuiter/${page.name}`}>
+        <Link to={`${page.href}`}>
           <div className="list-group-item bg-dark text-white">
             <i className={page.icon}></i>
             <span className="d-none d-xl-inline-block p-1 ps-2">

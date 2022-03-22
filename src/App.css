@@ -20,7 +20,7 @@ h1 {
 
 .wd-secondary-text {
   margin: 0px;
-  font-size: 13px;
+  font-size: 16px;
   color: rgb(110, 118, 125);
 }
 
@@ -89,4 +89,23 @@ h1 {
 }
 .wd-block:empty:before {
   content: "\00a0";
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  outline: none;
+  box-shadow: none !important;
 }
