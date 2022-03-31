@@ -22,7 +22,7 @@ const EditProfileComponent = ({ toggleEdit }) => {
     profile.website = website;
     profile.dateOfBirth = dateOfBirth;
 
-    dispatch({ type: "edit-profile", profile });
+    dispatch({ type: "edit-profile", state: profile });
     toggleEdit(false);
   };
 

@@ -1,13 +1,18 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
+import { createTuit } from "../actions/tuits-actions";
+
 const WhatsHappening = () => {
   const profile = useSelector((state) => state.profile);
-  let [whatsHappening, setWhatsHappening] = useState("");
+  let [newTuit, setNewTuit] = useState({ tuit: "New tuit" });
   const dispatch = useDispatch();
 
   const tuitClickHandler = () => {
-    dispatch({ type: "create-tuit", tuit: whatsHappening });
+    createTuit(dispatch, {
+      ...newTuit,
+      stats: { comments: 0, likes: 0, dislikes: 0, retuits: 0 },
+    });
   };
 
   return (
@@ -22,8 +27,7 @@ const WhatsHappening = () => {
         </div>
         <textarea
           className="col-10 bg-transparent text-white border-dark wd-whats-happening-textbox"
-          value={whatsHappening}
-          onChange={(event) => setWhatsHappening(event.target.value)}
+          onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
           placeholder="What's happening?"
         ></textarea>
       </div>

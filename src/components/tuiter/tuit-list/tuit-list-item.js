@@ -1,6 +1,8 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 
+import { deleteTuit } from "../actions/tuits-actions";
+
 import TuitStats from "./tuit-stats";
 
 const TuitListItem = ({
@@ -30,9 +32,6 @@ const TuitListItem = ({
   },
 }) => {
   const dispatch = useDispatch();
-  const deleteTuit = (tuit) => {
-    dispatch({ type: "delete-tuit", tuit });
-  };
 
   return (
     <div className="row border border-dark p-1 pt-3">
@@ -56,13 +55,17 @@ const TuitListItem = ({
 
       <div className="col-10">
         <div>
-          {tuit.postedBy.username}
-          <i className="fa-solid fa-circle-check m-1"></i>
+          {tuit.postedBy ? (
+            <div>
+              {tuit.postedBy.username}
+              <i className="fa-solid fa-circle-check m-1"></i>
+            </div>
+          ) : null}
           <span className="wd-secondary-text">
             {tuit.handle} - {tuit.time}
           </span>
           <i
-            onClick={() => deleteTuit(tuit)}
+            onClick={() => deleteTuit(dispatch, tuit)}
             className="fas fa-remove fa 
                   fa-pull-right"
           ></i>
@@ -89,7 +92,7 @@ const TuitListItem = ({
             )}
           </div>
         )}
-        <TuitStats tuit={tuit} />
+        {tuit.stats && <TuitStats tuit={tuit} />}
       </div>
     </div>
   );
