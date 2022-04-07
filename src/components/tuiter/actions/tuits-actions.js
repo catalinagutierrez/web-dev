@@ -23,7 +23,7 @@ export const findAllTuits = async (dispatch) => {
 
 export const updateTuit = async (dispatch, tuit) => {
   const status = await service.updateTuit(tuit);
-  if (status === "OK") {
+  if (status.acknowledged) {
     dispatch({
       type: UPDATE_TUIT,
       tuit,
@@ -33,7 +33,7 @@ export const updateTuit = async (dispatch, tuit) => {
 
 export const deleteTuit = async (dispatch, tuit) => {
   const status = await service.deleteTuit(tuit);
-  if (status === "OK") {
+  if (status.acknowledged) {
     dispatch({
       type: DELETE_TUIT,
       tuit,

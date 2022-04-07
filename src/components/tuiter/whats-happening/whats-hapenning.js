@@ -5,13 +5,20 @@ import { createTuit } from "../actions/tuits-actions";
 
 const WhatsHappening = () => {
   const profile = useSelector((state) => state.profile);
-  let [newTuit, setNewTuit] = useState({ tuit: "New tuit" });
+  let [newTuit, setNewTuit] = useState({ tuit: "" });
   const dispatch = useDispatch();
 
   const tuitClickHandler = () => {
     createTuit(dispatch, {
       ...newTuit,
       stats: { comments: 0, likes: 0, dislikes: 0, retuits: 0 },
+      postedBy: {
+        username: "Mickey",
+      },
+      liked: false,
+      disliked: false,
+      time: "Now",
+      handle: "Mouse",
     });
   };
 
@@ -29,12 +36,16 @@ const WhatsHappening = () => {
           className="col-10 bg-transparent text-white border-dark wd-whats-happening-textbox"
           onChange={(e) => setNewTuit({ ...newTuit, tuit: e.target.value })}
           placeholder="What's happening?"
+          value={newTuit.tuit}
         ></textarea>
       </div>
       <div className="row justify-content-end">
         <button
           className="col-2 btn btn-block rounded-pill wd-blue m-2"
-          onClick={tuitClickHandler}
+          onClick={(e) => {
+            setNewTuit({ tuit: "" });
+            tuitClickHandler();
+          }}
         >
           Tuit
         </button>
